@@ -40,11 +40,11 @@ if email:
     if email == "beck@gmail.com":
         client_name = 'Mr. Beck'
         option_taken = 'New Cash'
-        loader = DirectoryLoader("content\\new_articles_beck\\", glob="*.txt", loader_cls=TextLoader)
+        loader = DirectoryLoader("content/new_articles_beck/", glob="*.txt", loader_cls=TextLoader)
     elif email == "maverick@gmail.com":
         client_name = 'Mr. Maverick'
         option_taken = 'New Finance'
-        loader = DirectoryLoader("content\\new_articles_maverick\\", glob="*.txt", loader_cls=TextLoader)
+        loader = DirectoryLoader("content/new_articles_maverick/", glob="*.txt", loader_cls=TextLoader)
     else:
         st.error("Sorry, the provided email ID is not recognized. Please enter a valid email ID.")
 else:
