@@ -13,8 +13,19 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import OpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
 
+
+#import toml
+
+# Load the TOML file
+#config = toml.load('config.toml')
+
+# Access the API key
+OPENAI_API_KEY = config['OPENAI_API_KEY']
+
+# Now you can use the api_key in your application
+
 # Set OpenAI API key
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+#os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 # Function for speech-to-text conversion
 def speech_to_text():
