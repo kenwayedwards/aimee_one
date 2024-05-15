@@ -14,7 +14,7 @@ from langchain_community.llms import OpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
 
 # Set OpenAI API key
-os.environ['OPENAI_API_KEY'] = 'PLACE YOUR OPENAI KEY HERE !'
+os.environ['OPENAI_API_KEY'] = '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'
 
 # Function for speech-to-text conversion
 def speech_to_text():
