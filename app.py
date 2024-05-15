@@ -14,10 +14,10 @@ from langchain_community.llms import OpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
 
 
-#import toml
+import toml
 
 # Load the TOML file
-#config = toml.load('config.toml')
+config = toml.load('config.toml')
 
 # Access the API key
 OPENAI_API_KEY = config['OPENAI_API_KEY']
