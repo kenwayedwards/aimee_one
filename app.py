@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import speech_recognition as sr
-import pyautogui
+#import pyautogui
 from langchain import embeddings
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
@@ -108,24 +108,24 @@ if email in ["beck@gmail.com", "maverick@gmail.com"]:
                 st.write(llm_response['result'])
 
                 # Simulate pressing the down arrow key, logic is pending to be finalised
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
-                pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
+                #pyautogui.press('down')
 
             else:
                 st.write("No speech input received.")
