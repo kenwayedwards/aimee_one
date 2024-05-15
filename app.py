@@ -5,6 +5,9 @@ import speech_recognition as sr
 from langchain import embeddings
 from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import Chroma
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import OpenAI
